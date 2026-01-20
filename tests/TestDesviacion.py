@@ -22,4 +22,4 @@ class TestDesviacion(unittest.TestCase):
 
     def test_n_elementos(self):
         d = Desviacion([2, 4, 8, 9, 10, 15])
-        self.assertAlmostEqual(4.20, d.calcular(), places=2)
+        self.assertAlmostEqual(4.2, d.calcular(), places=2)
