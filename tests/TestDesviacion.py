@@ -8,3 +8,8 @@ class TestDesviacion(unittest.TestCase):
     def test_conjunto_vacio_retornaNone(self):
         d = Desviacion([])
         self.assertIsNone(d.calcular())
+
+    
+    def test_un_elemento_retornaCero(self):
+        d = Desviacion([5])
+        self.assertEqual(0, d.calcular())
