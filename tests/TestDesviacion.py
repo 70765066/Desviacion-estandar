@@ -18,3 +18,8 @@ class TestDesviacion(unittest.TestCase):
     def test__dos__elementos(self):
         d = Desviacion([5,7])
         self.assertEqual(1, d.calcular())
+
+
+    def test_n_elementos(self):
+        d = Desviacion([2, 4, 8, 9, 10, 15])
+        self.assertAlmostEqual(4.20, d.calcular(), places=2)
