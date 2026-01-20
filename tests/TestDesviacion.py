@@ -13,3 +13,8 @@ class TestDesviacion(unittest.TestCase):
     def test_un_elemento_retornaCero(self):
         d = Desviacion([5])
         self.assertEqual(0, d.calcular())
+
+
+    def test__dos__elementos(self):
+        d = Desviacion([5,7])
+        self.assertEqual(1, d.calcular())
