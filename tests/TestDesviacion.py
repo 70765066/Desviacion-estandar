@@ -3,4 +3,8 @@ import unittest
 from src.logica.Desviacion import Desviacion
 
 class TestDesviacion(unittest.TestCase):
-    pass
+    
+
+    def test_conjunto_vacio_retornaNone(self):
+        d = Desviacion([])
+        self.assertIsNone(d.calcular())
