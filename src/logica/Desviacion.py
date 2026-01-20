@@ -1,5 +1,5 @@
-# src/logica/Desviacion.py
 import math
+
 
 class Desviacion:
     def __init__(self, datos):
@@ -15,8 +15,5 @@ class Desviacion:
             return 0
 
         promedio = sum(self.__datos) / n
-        suma = 0
-        for x in self.__datos:
-            suma += (x - promedio) ** 2
-
-        return math.sqrt(suma / n)
+        varianza = sum((x - promedio) ** 2 for x in self.__datos) / n
+        return math.sqrt(varianza)
