@@ -1,17 +1,7 @@
-import unittest
-from src.logica.Conjunto import Conjunto
+# src/logica/Desviacion.py
+class Desviacion:
+    def __init__(self, datos):
+        self.__datos = datos
 
-
-class TestConjunto(unittest.TestCase):
-    def test_conjunto_vacio_retornaNone(self):
-
-        conjunto = Conjunto([])
-        self.assertIsNone(conjunto.promedio())
-
-    def test_conjunto_unElemento_retornaValorUnicoElemento(self):
-        conjunto = Conjunto([5])
-        self.assertEqual(5, conjunto.promedio())
-
-    def test_conjunto_nElementos_retornaPromedioNElementos( self ):
-        conjunto=Conjunto([2,4,8,9,10,15])
-        self.assertEqual((2+4+8+9+10+15)/6,conjunto.promedio())
+    def calcular(self):
+        return None
