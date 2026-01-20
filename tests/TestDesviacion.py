@@ -1,7 +1,6 @@
-# src/logica/Desviacion.py
-class Desviacion:
-    def __init__(self, datos):
-        self.__datos = datos
+# tests/TestDesviacion.py
+import unittest
+from src.logica.Desviacion import Desviacion
 
-    def calcular(self):
-        return None
+class TestDesviacion(unittest.TestCase):
+    pass
