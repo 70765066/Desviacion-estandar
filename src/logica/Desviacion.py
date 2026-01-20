@@ -6,3 +6,7 @@ class Desviacion:
     def calcular(self):
         if len(self.__datos) == 0:
             return None
+        
+
+        if len(self.__datos) == 1:
+            return 0
